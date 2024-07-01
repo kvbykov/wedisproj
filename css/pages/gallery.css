@@ -1,0 +1,35 @@
+.gallery-content {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-content h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.gallery-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.gallery-block img {
+    width: 50%;
+    max-height: 400px;
+    border-radius: 20px;
+}
+
+.gallery-block p {
+    margin: 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+}

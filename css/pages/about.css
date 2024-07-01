@@ -1,0 +1,38 @@
+.about-content {
+    margin: 2rem auto 0 auto;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-content p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-block {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.about-block img {
+    height: auto;
+}
+
+.about-block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#aboutEndLine {
+    font-size: 40px;
+    font-weight: bold;
+}

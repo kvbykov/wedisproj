@@ -6,32 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/about.css">
 </head>
 
 <body>
-    <header>
-        <h1>Flight Ticket Reservations</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="video-gallery.html">Video Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <navigation id="navigation"></navigation>
+
     <main>
-        <h2>About Us</h2>
-        <p>Information about the company and its mission.</p>
+        <section class="about-content">
+            <h1 id="aboutHeader" class="animated"></h1>
+
+            <div class="about-block">
+                <p id="jetDescription" class="animated slide-left"></p>
+                <img src="images/jet.png" alt="Image 2" class="animated slide-right">
+            </div>
+
+            <div class="about-block">
+                <img src="images/attendant.png" alt="Image 2" class="animated slide-left">
+                <div class="animated slide-right">
+                    <p id="crewDescription"></p>
+                    <p id="aboutEndLine"></p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Flight Ticket Reservations. All rights reserved.</p>
+        <p id="credentials"></p>
     </footer>
-    <script src="js/scripts.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/pages/about.js"></script>
 </body>
 
 </html>

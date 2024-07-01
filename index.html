@@ -4,34 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Ticket Reservations</title>
+    <title id="title"></title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
-    <header>
-        <h1>Flight Ticket Reservations</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="video-gallery.html">Video Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <navigation id="navigation"></navigation>
+
     <main>
-        <h2>Welcome to Flight Ticket Reservations</h2>
-        <p>Your one-stop destination for booking flight tickets to various tourist destinations.</p>
+        <h1 id="header"></h1>
+
+        <h2 id="popularDestinations"></h2>
+        <section id="popular-destinations" class="destinations-row"></section>
+
+        <section id="weather-search">
+            <h2 id="weatherHeader"></h2>
+            <input type="text" id="cityInput" placeholder="City">
+            <button id="searchButton">Search</button>
+            <div id="weatherResult"></div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Flight Ticket Reservations. All rights reserved.</p>
+        <p id="credentials"></p>
     </footer>
-    <script src="js/scripts.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/pages/index.js"></script>
+    <script src="js/assets/weather_codes.js"></script>
 </body>
 
 </html>

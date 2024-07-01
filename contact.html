@@ -6,43 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
 </head>
 
 <body>
-    <header>
-        <h1>Flight Ticket Reservations</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="video-gallery.html">Video Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <navigation id="navigation"></navigation>
     <main>
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="images/contact-image.png" alt="Contact Image">
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
 
-            <button type="submit">Send</button>
-        </form>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-block animated fade-in">
+                <img src="images/phone-icon.png" alt="Phone">
+                <p>Phone</p>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-block animated fade-in">
+                <img src="images/email-icon.png" alt="Email">
+                <p>Email</p>
+                <p>info@example.com</p>
+            </div>
+            <div class="contact-block animated fade-in">
+                <img src="images/instagram-icon.png" alt="Instagram">
+                <p>Instagram</p>
+                <p>@example</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 Flight Ticket Reservations. All rights reserved.</p>
+        <p id="credentials"></p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/pages/contact.js"></script>
 </body>
 
 </html>

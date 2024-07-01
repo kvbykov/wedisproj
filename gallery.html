@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/gallery.css">
 </head>
 
 <body>
-    <header>
-        <h1>Flight Ticket Reservations</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="video-gallery.html">Video Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <navigation id="navigation"></navigation>
+
     <main>
-        <h2>Gallery</h2>
-        <p>Photos of tourist destinations.</p>
+        <section class="gallery-content">
+            <h1 id="galleryHeader" class="animated"></h1>
+
+            <div class="gallery-block animated">
+                <img src="images/gallery1.jpeg" alt="Image 2">
+                <p id="galleryTest1"></p>
+            </div>
+
+            <div class="gallery-block animated">
+                <p id="galleryTest2"></p>
+                <img src="images/gallery2.jpg" alt="Image 2">
+            </div>
+
+            <div class="gallery-block animated">
+                <img src="images/gallery3.jpeg" alt="Image 2">
+                <p id="galleryTest3"></p>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 Flight Ticket Reservations. All rights reserved.</p>
+        <p id="credentials"></p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/pages/gallery.js"></script>
 </body>
 
 </html>
