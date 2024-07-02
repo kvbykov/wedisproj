@@ -6,19 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/video-gallery.css">
 </head>
 
 <body>
     <navigation id="navigation"></navigation>
     <main>
-        <h2>Video Gallery</h2>
-        <p>Watch our collection of travel and tourism videos.</p>
+        <section class="video-gallery-content">
+            <h1 id="video-gallery-header" class="animated"></h1>
+
+            <div class="video-gallery-block animated">
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p id="video-gallery-text-1"></p>
+            </div>
+
+            <div class="video-gallery-block animated">
+                <p id="video-gallery-text-2"></p>
+                <video controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video-gallery-block animated">
+                <video controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p id="video-gallery-text-3"></p>
+            </div>
+        </section>
     </main>
     <footer>
         <p id="credentials"></p>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/elements.js"></script>
+    <script src="js/pages/video-gallery.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,48 @@
+.portfolio-content {
+    margin: 2rem auto 0 auto;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-content h2 {
+    margin-bottom: 2rem;
+    margin-right: 0.75rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.portfolio-content p {
+    margin: 1rem 0 4rem 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.portfolio-block {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.portfolio-block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio-block img {
+    height: auto;
+}
+
+.portfolio-block .infographic {
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(143, 255, 248);
+    text-shadow: 0 0 3px rgba(183, 248, 255, 0.8);
+}

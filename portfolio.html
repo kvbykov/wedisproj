@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/portfolio.css">
 </head>
 
 <body>
     <navigation id="navigation"></navigation>
     <main>
-        <h2>Portfolio</h2>
-        <p>Showcasing our successful projects and satisfied customers.</p>
+        <section class="portfolio-content">
+            <div class="portfolio-title">
+                <h2 id="portfolio-first-title" class="animated"></h2>
+                <h2 id="portfolio-second-title" class="animated"></h2>
+            </div>
+
+            <div class="portfolio-block">
+                <p id="flights-number" class="animated slide-left"></p>
+                <p id="flights-number-infographic" class="infographic animated slide-right"></p>
+            </div>
+
+            <div class="portfolio-block">
+                <p id="crew-number-infographic" class="infographic animated slide-left"></p>
+                <p id="crew-number" class="animated slide-right"></p>
+            </div>
+
+            <div class="portfolio-block">
+                <p id="passenger-flow" class="animated slide-left"></p>
+                <p id="passenger-flow-infographic" class="infographic animated slide-right"></p>
+            </div>
+
+        </section>
     </main>
     <footer>
         <p id="credentials"></p>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/elements.js"></script>
+    <script src="js/pages/portfolio.js"></script>
 </body>
 
 </html>

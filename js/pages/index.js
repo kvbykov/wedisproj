@@ -2,7 +2,7 @@
 // Perform app initialization.
 document.addEventListener('DOMContentLoaded', initIndex);
 
-function initIndex() {
+async function initIndex() {
     // Insert popular destinations.
     const popularDestinationsSection = document.getElementById('popular-destinations');
     if (popularDestinationsSection) {
@@ -19,25 +19,36 @@ function initIndex() {
         });
 
         // TODO: Fill this section with more real data.
-        popularDestinationsSection.innerHTML += blocks.repeat(3);
+        popularDestinationsSection.innerHTML = blocks;
     }
 
     // Display weather on `Search` button click or `Enter` press.
-    const searchButton = document.getElementById('searchButton');
+    const searchButton = document.getElementById('search-button');
     searchButton?.addEventListener('click', displayWeather);
-    const cityInput = document.getElementById('cityInput');
+    const cityInput = document.getElementById('city-input');
     cityInput?.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
             displayWeather();
         }
     });
+
+    const animatedElements = document.querySelectorAll('.animated');
+
+    // Loop through all the elements and add the observer to them.
+    //
+    // The delay of 100 milliseconds makes the animation look prettier.
+    for (let i = 0; i < animatedElements.length; i++) {
+        const element = animatedElements[i];
+        observer.observe(element);
+        await delay(200);
+    }
 }
 
 /**
     Displays the weather of the city entered by the user.
 **/
 async function displayWeather() {
-    const city = document.getElementById('cityInput').value;
+    const city = document.getElementById('city-input').value;
     if (!city) {
         return;
     }
@@ -52,7 +63,7 @@ async function displayWeather() {
         latitude = geoResponse.results[0].latitude;
         longitude = geoResponse.results[0].longitude;
     } else {
-        document.getElementById('weatherResult').innerHTML = '<p>City not found. Please try again.</p>';
+        document.getElementById('weather-result').innerHTML = '<p>City not found. Please try again.</p>';
     }
 
     // Fetch the weather using latitude and longitude.
@@ -79,8 +90,8 @@ async function displayWeather() {
             </div>
             `;
 
-        document.getElementById('weatherResult').innerHTML = weatherResult;
+        document.getElementById('weather-result').innerHTML = weatherResult;
     } else {
-        document.getElementById('weatherResult').innerHTML = '<p>City not found. Please try again.</p>';
+        document.getElementById('weather-result').innerHTML = '<p>City not found. Please try again.</p>';
     }
 }
