@@ -1,19 +1,41 @@
 # Project Documentation
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Home Page](#home-page)
-3. [About Us Page](#about-us-page)
-4. [Gallery Page](#gallery-page)
-5. [Video Gallery Page](#video-gallery-page)
-6. [Contact Page](#contact-page)
-7. [Portfolio Page](#portfolio-page)
-8. [Blog Page](#blog-page)
-9. [Location Page](#location-page)
-10. [Functionality and Usage](#functionality-and-usage)
+- [Project Documentation](#project-documentation)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Home Page](#home-page)
+    - [Description](#description)
+    - [Screenshot](#screenshot)
+  - [About Us Page](#about-us-page)
+    - [Description](#description-1)
+    - [Screenshot](#screenshot-1)
+  - [Gallery Page](#gallery-page)
+    - [Description](#description-2)
+    - [Screenshot](#screenshot-2)
+  - [Video Gallery Page](#video-gallery-page)
+    - [Description](#description-3)
+    - [Screenshot](#screenshot-3)
+  - [Contact Page](#contact-page)
+    - [Description](#description-4)
+    - [Screenshot](#screenshot-4)
+  - [Portfolio Page](#portfolio-page)
+    - [Description](#description-5)
+    - [Screenshot](#screenshot-5)
+  - [Blog Page](#blog-page)
+    - [Description](#description-6)
+    - [Screenshot](#screenshot-6)
+  - [Location Page](#location-page)
+    - [Description](#description-7)
+    - [Screenshot](#screenshot-7)
+  - [Functionality and Usage](#functionality-and-usage)
     - [Form Validation](#form-validation)
+      - [Description](#description-8)
+      - [Screenshot](#screenshot-8)
     - [Animated Elements](#animated-elements)
+      - [Description](#description-9)
     - [Dynamic Content](#dynamic-content)
+      - [Description](#description-10)
 
 ## Introduction
 
@@ -94,7 +116,7 @@ The Location page displays a map and a text block describing the location of the
 Form validation ensures that all required fields are filled out correctly before submission. This includes checks for name, email, and message fields.
 
 #### Screenshot
-![Form Validation](screens/form-validation.png.png)
+![Form Validation](screens/form-validation.png)
 
 ### Animated Elements
 
